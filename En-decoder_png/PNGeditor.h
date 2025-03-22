@@ -6,16 +6,13 @@
 #include <bitset> //bitset<8> ; .to_ulong()
 #include <vector> // vector ; .push_back()
 
-#include <png.h>
+#include <png.h> //Processing png file
 
 class PNGeditor
 {
 	png_infop m_Info_ptr;
 	//rgba pixels array
 	png_bytepp m_Row_pointers;
-
-	//Was the image read?
-	bool m_Read = false;
 
 	//sizes image
 	int m_Width = 0;
@@ -28,13 +25,13 @@ private:
 	//char decToLastBin(int n);
 	unsigned int read_size(const std::vector<char> bytes);
 
-public:
 	//reading png file and sizes image and rgba pixels 
 	void read_png(const char* file_path);
+public:
 
 	//Reads bits encoded in the file
-	std::vector<char> decode_png();
+	std::vector<char> decode_png(const char* file_path);
 	//encodes the received bits in the last bits of RGBA image
-	void encode_png(const std::vector<char>& bits);
+	void encode_png(const std::vector<char>& bits, const char* file_path);
 };
 

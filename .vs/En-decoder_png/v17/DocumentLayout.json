@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "Y:\\CPP\\Projects\\En-decoder_png\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0E3137-FD5A-4698-AA12-5339F582CA95}|En-decoder_png\\En-decoder_png.vcxproj|Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\PNGeditor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AB0E3137-FD5A-4698-AA12-5339F582CA95}|En-decoder_png\\En-decoder_png.vcxproj|solutionrelative:En-decoder_png\\PNGeditor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0E3137-FD5A-4698-AA12-5339F582CA95}|En-decoder_png\\En-decoder_png.vcxproj|Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\PNGeditor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AB0E3137-FD5A-4698-AA12-5339F582CA95}|En-decoder_png\\En-decoder_png.vcxproj|solutionrelative:En-decoder_png\\PNGeditor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0E3137-FD5A-4698-AA12-5339F582CA95}|En-decoder_png\\En-decoder_png.vcxproj|Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\BitConvert.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AB0E3137-FD5A-4698-AA12-5339F582CA95}|En-decoder_png\\En-decoder_png.vcxproj|solutionrelative:En-decoder_png\\BitConvert.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0E3137-FD5A-4698-AA12-5339F582CA95}|En-decoder_png\\En-decoder_png.vcxproj|Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\BitConvert.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AB0E3137-FD5A-4698-AA12-5339F582CA95}|En-decoder_png\\En-decoder_png.vcxproj|solutionrelative:En-decoder_png\\BitConvert.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0E3137-FD5A-4698-AA12-5339F582CA95}|En-decoder_png\\En-decoder_png.vcxproj|Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AB0E3137-FD5A-4698-AA12-5339F582CA95}|En-decoder_png\\En-decoder_png.vcxproj|solutionrelative:En-decoder_png\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 150,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 266,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.cpp",
+              "DocumentMoniker": "Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\main.cpp",
+              "RelativeDocumentMoniker": "En-decoder_png\\main.cpp",
+              "ToolTip": "Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\main.cpp",
+              "RelativeToolTip": "En-decoder_png\\main.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-06T19:13:13.589Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PNGeditor.h",
+              "DocumentMoniker": "Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\PNGeditor.h",
+              "RelativeDocumentMoniker": "En-decoder_png\\PNGeditor.h",
+              "ToolTip": "Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\PNGeditor.h",
+              "RelativeToolTip": "En-decoder_png\\PNGeditor.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-22T22:44:01.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BitConvert.h",
+              "DocumentMoniker": "Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\BitConvert.h",
+              "RelativeDocumentMoniker": "En-decoder_png\\BitConvert.h",
+              "ToolTip": "Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\BitConvert.h",
+              "RelativeToolTip": "En-decoder_png\\BitConvert.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-22T22:44:00.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BitConvert.cpp",
+              "DocumentMoniker": "Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\BitConvert.cpp",
+              "RelativeDocumentMoniker": "En-decoder_png\\BitConvert.cpp",
+              "ToolTip": "Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\BitConvert.cpp",
+              "RelativeToolTip": "En-decoder_png\\BitConvert.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-10T17:50:33.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PNGeditor.cpp",
+              "DocumentMoniker": "Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\PNGeditor.cpp",
+              "RelativeDocumentMoniker": "En-decoder_png\\PNGeditor.cpp",
+              "ToolTip": "Y:\\CPP\\Projects\\En-decoder_png\\En-decoder_png\\PNGeditor.cpp",
+              "RelativeToolTip": "En-decoder_png\\PNGeditor.cpp",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAE0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-09T20:00:32.383Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

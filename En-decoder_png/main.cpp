@@ -28,11 +28,9 @@ void work_program(const char* filepath, std::string text)
 		BitConvert converter;
 		PNGeditor image;
 
-		image.read_png(filepath);
-		image.encode_png(converter.string_convert(text));
+		image.encode_png(converter.string_convert(text), filepath);
 	
-		image.read_png(filepath);
-		std::cout << converter.bits_convert(image.decode_png()) << std::endl;
+		std::cout << converter.bits_convert(image.decode_png(filepath)) << std::endl;
 
 	}
 	catch (std::invalid_argument &e) {

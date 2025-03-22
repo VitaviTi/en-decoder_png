@@ -3,7 +3,7 @@
 bool BitConvert::this_ascii(const std::string& text)
 {
 	char ch = 0;
-	for (size_t i = 0; i < text.size(); i++)
+	for (size_t i = 0; i < text.size(); ++i)
 	{
 		ch = text[i];
 		if (ch < 0 || ch > 127)
@@ -77,7 +77,7 @@ std::vector<char> BitConvert::string_convert(const std::string& text)
 	//converting string in bits
 	std::vector<char> result{};
 
-	for (size_t i = 0; i < text.size(); i++)
+	for (size_t i = 0; i < text.size(); ++i)
 	{
 		//Convert each symbol of the string into bits
 		DecToBin((int)text[i], result);

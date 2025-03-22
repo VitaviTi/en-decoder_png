@@ -5,7 +5,7 @@ unsigned int PNGeditor::read_size(const std::vector<char> bytes)
 	std::stringstream ss;
 	std::bitset<32> bits_bitset;
 
-	for (size_t i = 0; i < 32; i++)
+	for (size_t i = 0; i < 32; ++i)
 	{
 		ss << (int)bytes[i];
 	}
@@ -51,19 +51,14 @@ void PNGeditor::read_png(const char* file_path)
 
 	m_Row_pointers = png_get_rows(png_ptr, m_Info_ptr);
 
-	m_Read = true;
-
 	//Destroy the PNG structure and closing a file
 	png_destroy_read_struct(&png_ptr, NULL, NULL);
 	fclose(fp);
 }
 
-std::vector<char> PNGeditor::decode_png()
+std::vector<char> PNGeditor::decode_png(const char* file_path)
 {
-	//read_png() function verification
-	if (!m_Read) {
-		throw std::logic_error("The file was not read");
-	}
+	read_png(file_path); // reading png file
 
 	//Checking for the ability to read the size of the encoded text
 	if ((m_Height + 1) * (m_Width + 1) * 4 < 32) {
@@ -74,10 +69,10 @@ std::vector<char> PNGeditor::decode_png()
 	std::vector<char> result;
 	unsigned int read_limit = 0;
 
-	for (size_t y = 0; y < m_Height; y++) {
-		for (size_t x = 0; x < m_Width; x++) {
+	for (size_t y = 0; y < m_Height; ++y) {
+		for (size_t x = 0; x < m_Width; ++x) {
 			png_bytep px = &(m_Row_pointers[y][x * 4]);
-			for (size_t j = 0; j < 4; j++)
+			for (size_t j = 0; j < 4; ++j)
 			{
 				if (result.size() == 32 && read_limit == 0)
 				{
@@ -101,12 +96,9 @@ std::vector<char> PNGeditor::decode_png()
 	return result;
 }
 
-void PNGeditor::encode_png(const std::vector<char>& bits)
+void PNGeditor::encode_png(const std::vector<char>& bits, const char* file_path)
 {
-	//read_png() function verification
-	if (!m_Read) {
-		throw std::logic_error("The file was not read");
-	}
+	read_png(file_path); // reading png file
 
 	//Checking the ability to record the entire binary code in the image
 	if (bits.size() > (m_Width + 1) * (m_Height + 1) * 4) {
@@ -139,10 +131,10 @@ void PNGeditor::encode_png(const std::vector<char>& bits)
 
 	//Bits encode in pixels images
 	unsigned int counter = 0;
-	for (size_t y = 0; y < m_Height; y++) {
-		for (size_t x = 0; x < m_Width; x++) {
+	for (size_t y = 0; y < m_Height; ++y) {
+		for (size_t x = 0; x < m_Width; ++x) {
 			png_bytep px = &(m_Row_pointers[y][x * 4]);
-			for (size_t j = 0; j < 4; j++)
+			for (size_t j = 0; j < 4; ++j)
 			{
 				if (px[j] % 2 == 0 && bits[counter] == 1) {
 					px[j]++;
@@ -157,7 +149,6 @@ void PNGeditor::encode_png(const std::vector<char>& bits)
 					png_write_png(png_ptr, m_Info_ptr, PNG_TRANSFORM_IDENTITY, NULL);
 					png_destroy_write_struct(&png_ptr, &m_Info_ptr);
 					fclose(fp);
-					m_Read = false;
 					return;
 				}
 			}
