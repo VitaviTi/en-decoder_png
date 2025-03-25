@@ -1,5 +1,6 @@
 #include "BitConvert.h"
 
+//Checking the string for encoding ascii
 bool BitConvert::this_ascii(const std::string& text)
 {
 	char ch = 0;
@@ -14,6 +15,7 @@ bool BitConvert::this_ascii(const std::string& text)
 	return true;
 }
 
+//Translation of the decimal number into binary code
 void BitConvert::DecToBin(int n, std::vector<char>& bits)
 {
 	while (n != 0)

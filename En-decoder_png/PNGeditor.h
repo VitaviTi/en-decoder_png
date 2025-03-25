@@ -22,7 +22,7 @@ class PNGeditor
 	std::string m_File_path;
 
 private:
-	//char decToLastBin(int n);
+	
 	unsigned int read_size(const std::vector<char> bytes);
 
 	//reading png file and sizes image and rgba pixels 

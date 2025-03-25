@@ -13,6 +13,7 @@ unsigned int PNGeditor::read_size(const std::vector<char> bytes)
 	return bits_bitset.to_ulong();
 }
 
+//reading png file and sizes image and rgba pixels 
 void PNGeditor::read_png(const char* file_path)
 {
 	m_File_path = file_path;

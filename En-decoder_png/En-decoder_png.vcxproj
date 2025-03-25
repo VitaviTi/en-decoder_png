@@ -28,11 +28,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BitConvert.cpp" />
+    <ClCompile Include="En_decoder_png.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PNGeditor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BitConvert.h" />
+    <ClInclude Include="En_decoder_png.h" />
     <ClInclude Include="PNGeditor.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
