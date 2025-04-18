@@ -1,5 +1,6 @@
 #include "PNGeditor.h"
 
+//read size
 unsigned int PNGeditor::read_size(const std::vector<char> bytes)
 {
 	std::stringstream ss;
