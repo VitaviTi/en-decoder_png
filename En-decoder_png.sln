@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "En-decoder_png", "En-decoder_png\En-decoder_png.vcxproj", "{A60D3884-2CCB-4DD4-926E-52267B22381A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		work|x64 = work|x64
+		work|x86 = work|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A60D3884-2CCB-4DD4-926E-52267B22381A}.Debug|x64.ActiveCfg = Debug|x64
+		{A60D3884-2CCB-4DD4-926E-52267B22381A}.Debug|x64.Build.0 = Debug|x64
+		{A60D3884-2CCB-4DD4-926E-52267B22381A}.Debug|x86.ActiveCfg = Debug|Win32
+		{A60D3884-2CCB-4DD4-926E-52267B22381A}.Debug|x86.Build.0 = Debug|Win32
+		{A60D3884-2CCB-4DD4-926E-52267B22381A}.Release|x64.ActiveCfg = Release|x64
+		{A60D3884-2CCB-4DD4-926E-52267B22381A}.Release|x64.Build.0 = Release|x64
+		{A60D3884-2CCB-4DD4-926E-52267B22381A}.Release|x86.ActiveCfg = Release|Win32
+		{A60D3884-2CCB-4DD4-926E-52267B22381A}.Release|x86.Build.0 = Release|Win32
+		{A60D3884-2CCB-4DD4-926E-52267B22381A}.work|x64.ActiveCfg = work|x64
+		{A60D3884-2CCB-4DD4-926E-52267B22381A}.work|x64.Build.0 = work|x64
+		{A60D3884-2CCB-4DD4-926E-52267B22381A}.work|x86.ActiveCfg = work|Win32
+		{A60D3884-2CCB-4DD4-926E-52267B22381A}.work|x86.Build.0 = work|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A94E658-83A6-4049-96A7-DE44890850CD}
+	EndGlobalSection
+EndGlobal
