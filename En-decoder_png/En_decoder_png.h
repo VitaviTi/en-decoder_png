@@ -21,7 +21,7 @@ extern "C" {
 
 
 	//Encoding the text in the png file
-	__declspec(dllexport) void encode_png(std::string text, std::string filepath);
+	__declspec(dllexport) void encode_png(std::string text, std::string filepath);	
 
 	//Decoding the text in the png file
 	__declspec(dllexport) std::string decode_png(const char* filepath);
