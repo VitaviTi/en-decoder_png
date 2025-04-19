@@ -1,8 +1,8 @@
 #pragma once
 
-#include <vector> // vector ; .pop_back() ; .insert()
-#include <sstream> //stringstream
 #include <bitset> //bitset<8> ; .to_ulong()
+#include <sstream> //stringstream
+#include <vector> // vector ; .pop_back() ; .insert()
 
 class BitConvert
 {
