@@ -14,12 +14,6 @@ extern "C" {
 	PNGeditor png_editor;
 
 	
-	//variable describing the number of the exception
-	__declspec(dllexport) int num = 0;
-	// 1 - logic_error - program error
-	// 2 - invalid_argument - user error
-
-
 	//Encoding the text in the png file
 	__declspec(dllexport) void encode_png(std::string text, std::string filepath);	
 
