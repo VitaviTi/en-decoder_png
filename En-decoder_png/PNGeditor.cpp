@@ -1,6 +1,19 @@
 #include "PNGeditor.h"
 
-//read size
+void PNGeditor::DecToBin(int n, std::vector<char>& bits)
+{
+	while (n != 0)
+	{
+		if (n % 2 == 0) {
+			bits.insert(bits.begin(), 0);
+		}
+		else {
+			bits.insert(bits.begin(), 1);
+		}
+		n /= 2;
+	}
+}
+
 unsigned int PNGeditor::read_size(const std::vector<char> bytes)
 {
 	std::stringstream ss;
@@ -64,7 +77,7 @@ std::vector<char> PNGeditor::decode_png(const char* file_path)
 
 	//Checking for the ability to read the size of the encoded text
 	if ((m_Height + 1) * (m_Width + 1) * 4 < 32) {
-		throw std::invalid_argument("The image is small for decoding");
+		throw std::logic_error("The image is small for decoding");
 	}
 
 	//Reading bits from the image
@@ -98,7 +111,7 @@ std::vector<char> PNGeditor::decode_png(const char* file_path)
 	return result;
 }
 
-void PNGeditor::encode_png(const std::vector<char>& bits, const char* file_path)
+void PNGeditor::encode_png(std::vector<char> bits, const char* file_path)
 {
 	read_png(file_path); // reading png file
 
@@ -130,6 +143,20 @@ void PNGeditor::encode_png(const std::vector<char>& bits, const char* file_path)
 	}
 
 	png_init_io(png_ptr, fp);
+
+	//If the size of the result is more than 4 bytes
+	if (bits.size() > 4294967296) {
+		throw std::logic_error("The length of the byte text exceeds the permissible");
+	}
+
+	//Writing the vector result size in 4 byte
+	std::vector<char> byte_length{};
+
+	DecToBin(bits.size(), byte_length);
+	do byte_length.insert(byte_length.begin(), 0);
+	while (byte_length.size() % 32 != 0);
+
+	bits.insert(bits.begin(), byte_length.begin(), byte_length.end());
 
 	//Bits encode in pixels images
 	unsigned int counter = 0;

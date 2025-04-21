@@ -89,20 +89,7 @@ std::vector<char> BitConvert::string_convert(const std::string& text)
 
 	}
 
-	//If the size of the result is more than 4 bytes
-	if (result.size() > 4294967296) {
-		throw std::logic_error("The length of the byte text exceeds the permissible");
-	}
 
-	//Writing the vector result size in 4 byte
-	std::vector<char> byte_length{};
-	int n = result.size();
-
-	DecToBin(result.size(), byte_length);
-	do byte_length.insert(byte_length.begin(), 0);
-	while (byte_length.size() % 32 != 0);
-
-	result.insert(result.begin(), byte_length.begin(), byte_length.end());
 
 	return result;
 }

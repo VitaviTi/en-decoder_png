@@ -21,8 +21,11 @@ class PNGeditor
 	//Path to the png image
 	std::string m_File_path;
 
+	//Translation of the decimal number into binary code
+	void DecToBin(int n, std::vector<char>& bits);
+
 private:
-	
+
 	unsigned int read_size(const std::vector<char> bytes);
 
 	//reading png file and sizes image and rgba pixels 
@@ -32,6 +35,6 @@ public:
 	//Reads bits encoded in the file
 	std::vector<char> decode_png(const char* file_path);
 	//encodes the received bits in the last bits of RGBA image
-	void encode_png(const std::vector<char>& bits, const char* file_path);
+	void encode_png(std::vector<char> bits, const char* file_path);
 };
 
