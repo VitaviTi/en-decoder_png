@@ -31,13 +31,20 @@ namespace WpfPrj
         public void OpenFileDialog(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
+
+
+
             openFileDialog.ShowDialog();
             openFileDialog.FileOk += UserCancel();
             UserPath.Text = openFileDialog.FileName;
         }
         public static CancelEventHandler UserCancel() => null;
 
-        //[DllImport("En-decoder_png.dll")]
-        //private extern 
+        [DllImport("En-decoder_png.dll", CharSet = CharSet.Unicode)]
+        private static extern void encode_png(string text, string filepath);
+
+        [DllImport("En-decoder_png.dll")]
+        private static extern string decode_png([MarshalAs(UnmanagedType.LPWStr)] string filepath);
+
     }
 }

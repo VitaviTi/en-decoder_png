@@ -89,7 +89,5 @@ std::vector<char> BitConvert::string_convert(const std::string& text)
 
 	}
 
-
-
 	return result;
 }

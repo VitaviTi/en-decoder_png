@@ -3,6 +3,14 @@
 #include "BitConvert.h"
 #include "PNGeditor.h"
 
+
+
+#ifdef API_DLL
+#define API_DLL __declspec(dllexport)
+#else
+#define API_DLL __declspec(dllimport)
+#endif
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -13,12 +21,11 @@ extern "C" {
 	//Working with png files
 	PNGeditor png_editor;
 
-	
 	//Encoding the text in the png file
-	__declspec(dllexport) void encode_png(std::string text, std::string filepath);	
+	API_DLL void encode_png(const wchar_t* wtext, const wchar_t* wfilepath);
 
 	//Decoding the text in the png file
-	__declspec(dllexport) std::string decode_png(const char* filepath);
+	API_DLL char* decode_png(const wchar_t* wfilepath);
 
 #ifdef __cplusplus
 }

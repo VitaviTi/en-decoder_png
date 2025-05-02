@@ -36,7 +36,7 @@ void PNGeditor::read_png(const char* file_path)
 	FILE* fp;
 	fopen_s(&fp, m_File_path.c_str(), "rb");
 	if (fp == NULL) {
-		throw std::invalid_argument("Error occured while opening. File not found.");
+		throw std::invalid_argument("Error occured while opening when reading. File not found.");
 	}
 
 	//Create png read struct
@@ -128,7 +128,7 @@ void PNGeditor::encode_png(std::vector<char> bits, const char* file_path)
 	FILE* fp;
 	fopen_s(&fp, m_File_path.c_str(), "wb");
 	if (fp == NULL) {
-		throw std::invalid_argument("Error occured while opening. File not found.");
+		throw std::invalid_argument("Error occured while opening when writing. File not found.");
 	}
 
 	//Create write struct

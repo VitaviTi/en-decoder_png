@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "En-decoder_png", "En-decoder_png\En-decoder_png.vcxproj", "{A60D3884-2CCB-4DD4-926E-52267B22381A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPrj", "WpfPrj\WpfPrj.csproj", "{2E10E127-8162-E8A8-B301-558638BD4303}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A60D3884-2CCB-4DD4-926E-52267B22381A} = {A60D3884-2CCB-4DD4-926E-52267B22381A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
