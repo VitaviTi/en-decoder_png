@@ -84,8 +84,9 @@ std::vector<char> BitConvert::string_convert(const std::string& text)
 		//Convert each symbol of the string into bits
 		DecToBin((int)text[i], result);
 		//Complement the end of each byte to 7 bits
-		do result.insert(result.begin(), 0);
-		while (result.size() % 7 != 0);
+		while (result.size() % 7 != 0) {
+			result.insert(result.begin(), 0);
+		}
 
 	}
 
